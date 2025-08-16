@@ -1,25 +1,45 @@
-.body{
-    font-family: monospace;
+:root{
+    --main-yellow: #FFF500;
+    --dark-gray: #1D1D1F;
+    --light-gray: #F9F9F9;
+}
+
+body{
+    background-color: var(--light-gray);
+}
+h1{
+    font-family: 'JetBrains Mono';
+    font-size: 63px;
+    line-height: 130%;
+    letter-spacing: -1%;
+    font-weight: 300px;
 }
 .navbar{
-    background-color: #FFF500;
+    background-color: var(--main-yellow);
     height: 60px;
     border-bottom: solid;
-    border-color: grey;
-    border-width: 2px;
-
-        font-family: monospace;
-
+    border-color: var(--dark-gray);
+    border-width: 1px;
+    font-family: 'Inter';
+    font-size: 16px;
 }
-
+.navbar-brand{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark-gray);
+    display: flex;
+}
+.navbar-brand, img{
+    height: 22px;
+}
 .navbar-toggler{
     border-style: none;
     position: relative;
     margin-left: 0;
     color: transparent;
+    color: var(--dark-gray);
 }
-
-.container{
-    background-color: red;
-    
+.articles{
+    margin: 0 60px 0 60px;
 }
