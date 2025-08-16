@@ -62,3 +62,14 @@ h5{
     width: 344px;
     height: 183px;
 }
+.card-body{
+    width: 344px;
+    height: fit-content;
+    overflow-wrap: break-word;
+    justify-content: space-between;
+}
+
+.card-icon{
+    width: 36px;
+    height: 36px;
+}
