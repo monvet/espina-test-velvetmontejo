@@ -1,0 +1,25 @@
+.body{
+    font-family: monospace;
+}
+.navbar{
+    background-color: #FFF500;
+    height: 60px;
+    border-bottom: solid;
+    border-color: grey;
+    border-width: 2px;
+
+        font-family: monospace;
+
+}
+
+.navbar-toggler{
+    border-style: none;
+    position: relative;
+    margin-left: 0;
+    color: transparent;
+}
+
+.container{
+    background-color: red;
+    
+}
