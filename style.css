@@ -8,7 +8,6 @@ body{
 }
 h1{
     font-family: 'JetBrains Mono';
-    font-size: 63px;    
     font-weight: 300;
     line-height: 130%;
     letter-spacing: -1%;
@@ -16,6 +15,10 @@ h1{
 h5{
     font-family: 'JetBrains Mono';
     font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: var(--dark-gray);
 }
 .navbar{
     background-color: var(--main-yellow);
@@ -55,7 +58,7 @@ h5{
     height: 120px;
 }
 .body-content{
-    margin: 0 60px 0 60px;
+    padding: 0 60px 0 60px;
 }
 .card{
     border: none;
@@ -70,7 +73,6 @@ h5{
     width: 344px;
     height: fit-content;
     overflow-wrap: break-word;
-    justify-content: space-between;
 }
 .card-icon{
     width: 36px;
