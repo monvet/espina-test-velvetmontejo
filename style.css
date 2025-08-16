@@ -3,7 +3,6 @@
     --dark-gray: #1D1D1F;
     --light-gray: #F9F9F9;
 }
-
 body{
     background-color: var(--light-gray);
 }
@@ -14,6 +13,10 @@ h1{
     letter-spacing: -1%;
     font-weight: 300px;
 }
+h5{
+    font-family: 'JetBrains Mono';
+    font-size: 25px;
+}
 .navbar{
     background-color: var(--main-yellow);
     height: 60px;
@@ -23,7 +26,11 @@ h1{
     font-family: 'Inter';
     font-size: 16px;
 }
+.nav-logo{
+    font-size: 18px;
+}
 .navbar-brand{
+    vertical-align:top;
     font-family: 'Inter';
     font-size: 18px;
     font-weight: 500;
@@ -31,6 +38,7 @@ h1{
     display: flex;
 }
 .navbar-brand, img{
+    vertical-align:top;
     height: 22px;
 }
 .navbar-toggler{
@@ -40,6 +48,17 @@ h1{
     color: transparent;
     color: var(--dark-gray);
 }
+.navbar-nav{
+    padding: 20px;
+}
 .articles{
     margin: 0 60px 0 60px;
+}
+.card{
+    border: none;
+    background-color: transparent;
+}
+.card-img-top{
+    width: 344px;
+    height: 183px;
 }
