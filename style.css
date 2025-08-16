@@ -8,10 +8,10 @@ body{
 }
 h1{
     font-family: 'JetBrains Mono';
-    font-size: 63px;
+    font-size: 63px;    
+    font-weight: 300;
     line-height: 130%;
     letter-spacing: -1%;
-    font-weight: 300px;
 }
 h5{
     font-family: 'JetBrains Mono';
@@ -51,12 +51,16 @@ h5{
 .navbar-nav{
     padding: 20px;
 }
-.articles{
+.space{
+    height: 120px;
+}
+.body-content{
     margin: 0 60px 0 60px;
 }
 .card{
     border: none;
     background-color: transparent;
+    width: 344px;
 }
 .card-img-top{
     width: 344px;
@@ -68,8 +72,27 @@ h5{
     overflow-wrap: break-word;
     justify-content: space-between;
 }
-
 .card-icon{
     width: 36px;
     height: 36px;
+}
+
+.big-btn{
+    font-family: 'JetBrains Mono';
+    width: 1200px;
+    border-radius: 15px;
+    background-color: #fff;
+    height: 110px;
+    width: 100%;
+}
+.big-btn:hover{
+    color: #fff;
+    background-color: var(--dark-gray);
+}
+footer{
+    height: 150px;
+    border-top: solid;
+    border-width: 1px;
+    border-color: var(--dark-gray);
+    background-color: var(--main-yellow);
 }
