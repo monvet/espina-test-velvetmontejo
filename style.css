@@ -34,7 +34,7 @@ a{
 }
 .navbar-brand{
     vertical-align:top;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: var(--dark-gray);
@@ -51,11 +51,17 @@ a{
     color: transparent;
     color: var(--dark-gray);
 }
-.navbar-nav{
+.nav-item{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     padding: 20px;
+    color: var(--dark-gray);
 }
 .space{
     height: 120px;
+}
+.small-space{
+    height: 60px;
 }
 .body-content{
     padding: 0 60px 0 60px;
@@ -64,6 +70,14 @@ a{
     border: none;
     background-color: transparent;
     width: 344px;
+    margin-right: auto;
+}
+.d-flex{
+    justify-content: space-around;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05); 
 }
 .card-img-top{
     width: 344px;
@@ -73,10 +87,13 @@ a{
     width: 344px;
     height: fit-content;
     overflow-wrap: break-word;
+    justify-content: space-between
 }
 .card-icon{
     width: 36px;
     height: 36px;
+    position: relative;
+    float: left;
 }
 
 .big-btn{
@@ -97,4 +114,8 @@ footer{
     border-width: 1px;
     border-color: var(--dark-gray);
     background-color: var(--main-yellow);
+}
+.footer-sections{
+        justify-content: space-between;
+
 }
