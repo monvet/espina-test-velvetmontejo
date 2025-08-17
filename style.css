@@ -122,11 +122,24 @@ a{
     color: #fff;
     background-color: var(--dark-gray);
 }
-.btn-arrow{
-    display: flex;
+.container-arrow{
     position: relative;
     align-items: center;
-    justify-content: end;
+}
+.arrow-icon{
+    width: 27px;
+    height: 22px;
+    background-image: url(resources/arrow-black.png);
+    background-size: cover;
+    position: absolute;
+    right: 0;
+}
+.big-btn:hover .arrow-icon{
+    width: 27px;
+    height: 22px;
+    background-image: url(resources/arrow-white.png);
+    background-size: cover;
+    text-align: left;
 }
 .btn-description{
     display: flex;
