@@ -11,6 +11,7 @@ h1{
     font-weight: 300;
     line-height: 130%;
     letter-spacing: -1%;
+    font-size: clamp(37px, 5vw, 63px);
 }
 h5{
     font-family: 'JetBrains Mono';
@@ -103,6 +104,10 @@ a{
     background-color: #fff;
     height: 110px;
     width: 100%;
+}
+
+.big-btn-text{
+    text-align: start;
 }
 .big-btn:hover{
     color: #fff;
