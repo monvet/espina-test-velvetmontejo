@@ -3,8 +3,14 @@
     --dark-gray: #1D1D1F;
     --light-gray: #F9F9F9;
 }
+/***** Custom size margins *****/
+
+
+/***** HTML Tags *****/
 body{
     background-color: var(--light-gray);
+    overflow-x: hidden;
+    min-width: 320px;
 }
 h1{
     font-family: 'JetBrains Mono';
@@ -31,9 +37,11 @@ a{
     text-decoration: none;
     color: var(--dark-gray);
 }
+/***** Navbar *****/
 .navbar{
     background-color: var(--main-yellow);
     height: 60px;
+    width: 100vw;
     border-bottom: solid;
     border-color: var(--dark-gray);
     border-width: 1px;
@@ -68,19 +76,20 @@ a{
     padding: 20px;
     color: var(--dark-gray);
 }
+
+/***** Main content classes *****/
 .space{
     height: 120px;
 }
 .small-space{
     height: 60px;
 }
-.body-content{
-    padding: 0 60px 0 60px;
-}
 .card{
     border: none;
     background-color: transparent;
-    width: 344px;
+    max-width: 359px;
+    min-width: 288px;
+    height: 100%;
     margin-right: auto;
 }
 .d-flex{
@@ -91,11 +100,16 @@ a{
     transform: scale(1.05); 
 }
 .card-img-top{
-    width: 344px;
-    height: 183px;
+    max-width: 359px;
+    min-width: 288px;
+        height: auto;
+
 }
 .card-body{
-    width: 344px;
+    max-width: 359px;
+    min-width: 288px;
+    height: auto;
+
     height: fit-content;
     overflow-wrap: break-word;
     justify-content: space-between
@@ -109,10 +123,10 @@ a{
 
 .big-btn{
     font-family: 'JetBrains Mono';
-    width: 1200px;
     border-radius: 15px;
     background-color: #fff;
-    height: 110px;
+    min-height: 110px;
+    max-height: 134px;
     width: 100%;
 }
 .big-btn-text{
@@ -123,15 +137,16 @@ a{
     background-color: var(--dark-gray);
 }
 .container-arrow{
-    position: relative;
+    display: flex;
     align-items: center;
+    justify-content: end;
 }
 .arrow-icon{
     width: 27px;
     height: 22px;
     background-image: url(resources/arrow-black.png);
     background-size: cover;
-    position: absolute;
+    position: relative;
     right: 0;
 }
 .big-btn:hover .arrow-icon{
@@ -146,6 +161,8 @@ a{
     position: relative;
     align-items: center;
 }
+
+/***** Footer *****/
 footer{
     height: 150px;
     border-top: solid;
@@ -157,3 +174,4 @@ footer{
         justify-content: space-between;
 
 }
+
