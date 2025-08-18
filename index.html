@@ -19,7 +19,7 @@
             <button class="navbar-toggler float-left" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="#" class="navbar-brand py-0"><img class="container ml-4" src="resources/Vector.png" alt="logo codebase">Codebase</a>
+            <a href="#" class="navbar-brand py-0"><img class="container ml-4 d-none d-lg-block" src="resources/Vector.png" alt="logo codebase">Codebase</a>
             <div class="collapse navbar-collapse mx-0" id="navDropdown">
                 <ul class="navbar-nav ms-auto" id="dropdown">
                     <li class="nav-item">
@@ -38,7 +38,7 @@
     </header>
 
     <div class="space"></div>
-    <section class="container-fluid px-lg-5 px-sm-1">
+    <section class="container-fluid px-lg-5 px-sm-3">
         <h1 class="my-0 py-0">Articles</h1>
         <div class="small-space"></div>
         <div class="container-fluid row px-0">
@@ -119,14 +119,14 @@
 
         <div class="container-fluid btn-container px-0">
             <button class="btn big-btn mx-0 px-1 my-2">
-                <div class="big-btn-text row px-lg-5"> <!-- Contiene los elementos dentro de cada botón grande -->
-                    <div class="col-lg-3 col-md-4 col-sm-8 col-xs-8"> <!-- Titulo y su numero cone estilo de exponencial -->
+                <div class="big-btn-text row px-lg-5 px-sm-3 px-2"> <!-- Contiene los elementos dentro de cada botón grande -->
+                    <div class="col-8 col-lg-3 col-md-4 col-sm-8"> <!-- Titulo y su numero cone estilo de exponencial -->
                         <h3 class="d-inline-block">Accordeons</h3><h5 class="d-inline-block align-top">01</h5>
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-6 d-none d-md-block py-0 btn-description"> <!-- Texto descriptivo de cada botón -->
                         <p class="my-0">Buttons are used to initialize an action. Button labels express what action will occur when the user interacts with it.</p>
                     </div>
-                    <div class="container-arrow col-lg-2 col-md-2 col-sm-4 col-xs-4"> <!-- Icono de flecha -->
+                    <div class="container-arrow col-4 col-lg-2 col-md-2 col-sm-4"> <!-- Icono de flecha -->
                         <div class="arrow-icon px-1 d-inline-block"></div>
                     </div>
                 </div>
@@ -137,16 +137,32 @@
     <section class="space"></section>
 
     <footer>
-        <div class="container-fluid px-5 pt-5">
+        <div class="container-fluid px-5 pt-md-5 pt-sm-2 ">
             <div class="row footer-sections">
-                <div class="footer-left col-lg-6 col-sm-12">
-                    <div class="d-inline-block justify-content-start"><img src="resources/Vector.png" alt=""></div>
-                    <div class="d-inline-block justify-content-start">Privacy policy</div><br>
-                    <div class="d-inline-block justify-content-start">Cookie policy</div><br>
-                    <div class="d-inline-block justify-content-start">dev@espina.studio</div>
+                <div class="col-lg-6 col-sm-6 col-xs-12 d-none d-md-block">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2">
+                            <div class="d-inline-block justify-content-start"><img src="resources/Vector.png" alt=""></div>
+                        </div>
+                        <div class="col-lg-11 col-md-10 px-0 px-lg-3">
+                            <div class="d-inline-block justify-content-start">Privacy policy</div><br>
+                            <div class="d-inline-block justify-content-start">Cookie policy</div><br>
+                            <div class="d-inline-block justify-content-start">dev@espina.studio</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-right col-lg-6 col-sm-12">
-                    <div class="d-flex justify-content-end">© 2025 All rights reserved</div>
+                <div class="d-flex flex-column col-lg-6 col-sm-6 col-xs-2 d-none d-md-block">
+                    <div class="text-end mt-xl-5 mt-md-5">© 2025 All rights reserved</div>
+                </div>
+
+                <div class="col-2 col-sm-1 d-sm-inline d-xs-inline d-lg-none d-md-none px-0 mt-0 pt-4">
+                    <div class="d-inline justify-content-start"><img src="resources/Vector.png" alt=""></div>
+                </div>
+                <div class="col-10 col-sm-11 d-sm-inline d-xs-inline d-lg-none d-md-none px-0 pt-4">
+                    <div class="text-start mt-0">Privacy policy</div>
+                    <div class="text-start mt-0">Cookie policy</div>
+                    <div class="text-start mt-0">dev@espina.studio</div>
+                    <div class="text-start mt-2">© 2025 All rights reserved</div>
                 </div>
             </div>
         </div>

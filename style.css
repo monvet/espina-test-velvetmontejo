@@ -41,7 +41,7 @@ a{
 .navbar{
     background-color: var(--main-yellow);
     height: 60px;
-    width: 100vw;
+    min-width: 100vw;
     border-bottom: solid;
     border-color: var(--dark-gray);
     border-width: 1px;
@@ -76,7 +76,11 @@ a{
     padding: 20px;
     color: var(--dark-gray);
 }
-
+.nav-link{
+    color: var(--dark-gray);
+}.nav-link:hover{
+    color: black;
+}
 /***** Main content classes *****/
 .space{
     height: 120px;
@@ -164,14 +168,13 @@ a{
 
 /***** Footer *****/
 footer{
-    height: 150px;
+    font-family: 'Inter';
+    font-weight: 400;
+    min-height: 150px;
+    max-height: 190px;
     border-top: solid;
     border-width: 1px;
     border-color: var(--dark-gray);
     background-color: var(--main-yellow);
-}
-.footer-sections{
-        justify-content: space-between;
-
 }
 
