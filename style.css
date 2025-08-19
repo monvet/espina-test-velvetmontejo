@@ -39,6 +39,9 @@ a{
 }
 /***** Navbar *****/
 .navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
     background-color: var(--main-yellow);
     height: 60px;
     min-width: 100vw;
@@ -106,7 +109,7 @@ a{
 .card-img-top{
     max-width: 359px;
     min-width: 288px;
-        height: auto;
+    height: auto;
 
 }
 .card-body{
