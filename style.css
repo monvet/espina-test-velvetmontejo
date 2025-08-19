@@ -91,6 +91,9 @@ a{
 .small-space{
     height: 60px;
 }
+.d-flex{
+    justify-content: space-around;
+}
 .card{
     border: none;
     background-color: transparent;
@@ -98,13 +101,12 @@ a{
     min-width: 288px;
     height: 100%;
     margin-right: auto;
-}
-.d-flex{
-    justify-content: space-around;
+    transition: transform 0.1s;
 }
 .card:hover{
     cursor: pointer;
-    transform: scale(1.05); 
+    transform: scale(1.01); 
+    
 }
 .card-img-top{
     max-width: 359px;
@@ -135,6 +137,9 @@ a{
     min-height: 110px;
     max-height: 134px;
     width: 100%;
+
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+;
 }
 .big-btn-text{
     text-align: start;
