@@ -71,7 +71,6 @@ a{
     position: relative;
     margin-left: 0;
     color: transparent;
-    color: var(--dark-gray);
 }
 .nav-item{
     font-family: 'Inter', sans-serif;
@@ -84,6 +83,30 @@ a{
 }.nav-link:hover{
     color: black;
 }
+.x-icon{
+    background-image: url(resources/icons8-x-30.png);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+}
+
+/***** Mostrar menu de hamburguesa por defecto *****/
+.navbar-toggler .navbar-toggler-icon {
+    display: inline-block;
+}
+.navbar-toggler .x-icon {
+    display: none;
+}
+
+/***** Cambiar a X cuando el menú está abierto *****/
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    display: none;
+}
+.navbar-toggler:not(.collapsed) .x-icon {
+    display: inline-block;
+}
+
 /***** Main content classes *****/
 .space{
     height: 120px;
