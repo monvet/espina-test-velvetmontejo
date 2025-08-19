@@ -1,0 +1,259 @@
+$main-yellow: #FFF500;
+$dark-gray: #1D1D1F;
+$light-gray: #F9F9F9;
+$black: #000000;
+$white: #ffffff;
+
+$inter: 'Inter', sans-serif;
+$jetbrains:'JetBrains Mono', monospace;
+
+/***** Custom size margins *****/
+
+
+/***** HTML Tags *****/
+@mixin heading-style {
+    font-family: $jetbrains;
+    font-weight: 300;
+}
+body{
+    background-color: $light-gray;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+h1{
+    @include heading-style;
+    line-height: 130%;
+    letter-spacing: -1%;
+    font-size: clamp(37px, 5vw, 63px);
+}
+h3{
+    @include heading-style;
+    font-size: 25px;
+}
+h5{
+    font-size: 10px;
+    font-weight: 500;
+}
+p{
+    font-family: $jetbrains;
+    font-size: 16px;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: $dark-gray;
+}
+/***** Navbar *****/
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $main-yellow;
+    height: 60px;
+    min-width: 100%;
+    border-bottom: solid;
+    border-color: $dark-gray;
+    border-width: 1px;
+    font-family: $inter;
+    font-size: 16px;
+}
+.nav-logo{
+    font-family: $inter;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+.navbar-brand{
+    vertical-align:top;
+    font-family: $inter;
+    font-size: 18px;
+    font-weight: 500;
+    color: $dark-gray;
+    display: flex;
+}
+.navbar-brand, img{
+    vertical-align:top;
+    height: 22px;
+}
+.nav-item{
+    font-family: $inter;
+    font-weight: 400;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0 15px;
+    color: $dark-gray;
+    border-bottom: solid;
+    border-width: 0.5px;
+    border-color: rgba(29, 29, 31, 10%);
+}
+.nav-link{
+    color: $dark-gray;
+    &:hover{
+        color: $black;
+    }
+}
+.x-icon{
+    background-image: url(resources/icons8-x-50.png);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+}
+
+.navbar-toggler {
+    border-style: none;
+    position: relative;
+    margin-left: 0;
+    color: transparent;
+
+    .navbar-toggler-icon {
+        display: inline-block;
+    }
+    .x-icon {
+        display: none;
+    }
+    &:not(.collapsed) {
+        .navbar-toggler-icon {
+            display: none;
+        }
+        .x-icon {
+            display: inline-block;
+        }
+    }
+}
+
+/***** Main content classes *****/
+.space{
+    height: 120px;
+}
+.small-space{
+    height: 60px;
+}
+.d-flex{
+    justify-content: space-around;
+}
+.card{
+    border: none;
+    background-color: transparent;
+    max-width: 359px;
+    min-width: 288px;
+    height: 100%;
+    margin-right: auto;
+    transition: transform 0.1s;
+    &:hover{
+        cursor: pointer;
+    transform: scale(1.01);
+    }
+}
+.card-img-top{
+    max-width: 359px;
+    min-width: 288px;
+    height: auto;
+
+}
+.card-body{
+    max-width: 359px;
+    min-width: 288px;
+    height: auto;
+
+    height: fit-content;
+    overflow-wrap: break-word;
+    justify-content: space-between
+}
+.card-icon{
+    width: 36px;
+    height: 36px;
+    position: relative;
+    float: left;
+}
+
+.big-btn{
+    font-family: $jetbrains;
+    border-radius: 15px;
+    background-color: #fff;
+    min-height: 110px;
+    max-height: 134px;
+    width: 100%;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    &:hover{
+        color: #fff;
+        background-color: $dark-gray;
+    }
+}
+.big-btn-text{
+    text-align: start;
+}
+
+.container-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.arrow-icon{
+    width: 27px;
+    height: 22px;
+    background-image: url(resources/arrow-black.png);
+    background-size: cover;
+    position: relative;
+    right: 0;
+}
+.big-btn:hover .arrow-icon{
+    width: 27px;
+    height: 22px;
+    background-image: url(resources/arrow-white.png);
+    background-size: cover;
+    text-align: left;
+}
+.btn-description{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+/***** Footer *****/
+footer{
+    font-family: $inter;
+    font-weight: 400;
+    min-height: 150px;
+    max-height: 190px;
+    border-top: solid;
+    border-width: 1px;
+    border-color: $dark-gray;
+    background-color: $main-yellow;
+}
+
+/***** Media query para hamburguer menu de navbar *****/
+@media (max-width: 991.98px) {
+    .dropdown-panel {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 260px;
+        height: 220px;
+        background-color: #ffffff;
+        border-style: none;
+        padding: 1rem;
+
+        transform: translateX(-110%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 2;
+    }
+
+    .dropdown-panel.show {
+        transform: translateX(0);
+    }
+
+}
+
+/***** Navbar normal para pantallas grandes *****/
+@media (min-width: 992px) {
+    .dropdown-panel {
+        width: auto;
+        height: auto;
+        background: none;
+        border: none;
+        box-shadow: none;
+        display: flex !important;
+        padding: 0;
+    }
+}
