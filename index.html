@@ -14,24 +14,27 @@
 <body id="body">
     <!--NavBar-->
     <header class="navbar navbar-expand-lg mt-0">
-        <div class="container-fluid mx-4">
-            <button class="navbar-toggler float-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown" aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="x-icon">✕</span>
-            </button>
-
-            <a href="#body" class="navbar-brand py-0"><img class="container ml-4 d-none d-lg-block" src="resources/Vector.png" alt="logo codebase"><p class="nav-logo d-none d-lg-block">Codebase</p></a>
-            <a href="#body" class="navbar-brand py-0"><p class="nav-logo s-flex float-left d-lg-none d-md-block d-sm-block d-xs-block" alt="logo codebase texto">Anagrama Codebase</p></a>
-            
-            <div class="collapse dropdown-panel" id="navDropdown">
-                <ul class="navbar-nav ms-auto" id="dropdown">
-                    <li class="nav-item"><a href="#articles" class="nav-link">Articles</a></li>
-                    <li class="nav-item"><a href="#components" class="nav-link">Components</a></li>
-                    <li class="nav-item"><a href="#resources" class="nav-link">Resources</a></li>
-                </ul>
+        <div class="container-fluid mx-1  mx-lg-4">
+            <div class="d-flex justify-content-start">
+                <button class="navbar-toggler collapsed px-1" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown" aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="x-icon">✕</span>
+                </button>
+                <a href="#body" class="navbar-brand py-0"><img class="container ml-4 d-none d-lg-block" src="resources/Vector.png" alt="logo codebase"><p class="nav-logo d-none d-lg-block">Codebase</p></a>
+                <a href="#body" class="navbar-brand py-auto"><p class="nav-logo d-lg-none d-md-block d-sm-block d-xs-block">Anagrama Codebase</p></a>    
             </div>
-            <img src="resources/smiley.png" alt="smiley face" onmouseover="this.src='resources/smiley_wink.png';" onmouseout="this.src='resources/smiley.png';" >
-        </div>
+
+            <div class="d-flex align-items-center mx-1 mx-sm-4">
+                <div class="collapse dropdown-panel" id="navDropdown">
+                    <ul class="navbar-nav ms-auto" id="dropdown">
+                        <li class="nav-item"><a href="#articles" class="nav-link">Articles</a></li>
+                        <li class="nav-item"><a href="#components" class="nav-link">Components</a></li>
+                        <li class="nav-item"><a href="#resources" class="nav-link">Resources</a></li>
+                    </ul>
+                </div>
+                <img class="smiley-icon" src="resources/smiley.png" alt="smiley face" onmouseover="this.src='resources/smiley_wink.png';" onmouseout="this.src='resources/smiley.png';" >
+            </div>
+        </div>    
     </header>
 
     <!--Start of the main content of the page-->
