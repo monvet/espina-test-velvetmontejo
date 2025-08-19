@@ -44,14 +44,13 @@ a{
     z-index: 1;
     background-color: var(--main-yellow);
     height: 60px;
-    min-width: 100vw;
+    min-width: 100%;
     border-bottom: solid;
     border-color: var(--dark-gray);
     border-width: 1px;
     font-family: 'Inter';
     font-size: 16px;
 }
-
 .nav-logo{
     font-family: 'Inter', sans-serif;
     font-size: 18px;
@@ -79,8 +78,13 @@ a{
 .nav-item{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    padding: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0 15px;
     color: var(--dark-gray);
+    border-bottom: solid;
+    border-width: 0.5px;
+    border-color: rgba(29, 29, 31, 10%);
 }
 .nav-link{
     color: var(--dark-gray);
@@ -88,7 +92,7 @@ a{
     color: black;
 }
 .x-icon{
-    background-image: url(resources/icons8-x-30.png);
+    background-image: url(resources/icons8-x-50.png);
     width: 30px;
     height: 30px;
     display: inline-block;
@@ -221,7 +225,7 @@ footer{
         left: 0;
         width: 260px;
         height: 220px;
-        background-color: var(--light-gray);
+        background-color: #ffffff;
         border-style: none;
         padding: 1rem;
 
@@ -233,9 +237,10 @@ footer{
     .dropdown-panel.show {
         transform: translateX(0);
     }
+
 }
 
-/* En pantallas grandes se comporta como menú normal */
+/***** Navbar normal para pantallas grandes *****/
 @media (min-width: 992px) {
     .dropdown-panel {
         width: auto;
@@ -243,7 +248,7 @@ footer{
         background: none;
         border: none;
         box-shadow: none;
-        display: flex !important; /* que se muestre siempre */
+        display: flex !important;
         padding: 0;
     }
 }
