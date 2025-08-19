@@ -181,3 +181,37 @@ footer{
     background-color: var(--main-yellow);
 }
 
+/***** Media query para hamburguer menu de navbar *****/
+@media (max-width: 991.98px) {
+    .dropdown-panel {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 260px;
+        height: 220px;
+        background-color: var(--light-gray);
+        border-style: none;
+        padding: 1rem;
+
+        transform: translateX(-110%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 2;
+    }
+
+    .dropdown-panel.show {
+        transform: translateX(0);
+    }
+}
+
+/* En pantallas grandes se comporta como menú normal */
+@media (min-width: 992px) {
+    .dropdown-panel {
+        width: auto;
+        height: auto;
+        background: none;
+        border: none;
+        box-shadow: none;
+        display: flex !important; /* que se muestre siempre */
+        padding: 0;
+    }
+}
