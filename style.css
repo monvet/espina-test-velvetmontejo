@@ -163,6 +163,13 @@ a {
   position: relative;
   float: left;
 }
+.card-icon.flag {
+  margin-top: 10px;
+  width: 15px;
+  height: 19px;
+  position: relative;
+  float: left;
+}
 
 .big-btn {
   font-family: "JetBrains Mono", monospace;

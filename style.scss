@@ -161,7 +161,15 @@ a{
     height: 36px;
     position: relative;
     float: left;
+    &.flag{
+    margin-top: 10px;
+    width: 15px;
+    height: 19px;
+    position: relative;
+    float: left;
+    }
 }
+
 
 .big-btn{
     font-family: $jetbrains;
