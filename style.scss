@@ -140,10 +140,6 @@ a{
     height: 100%;
     margin-right: auto;
     transition: transform 0.1s;
-    &:hover{
-        cursor: pointer;
-    transform: scale(1.01);
-    }
 }
 .card-img-top{
     max-width: 359px;
@@ -256,4 +252,10 @@ footer{
         display: flex !important;
         padding: 0;
     }
+}
+
+/***** Para JS highlight *****/
+.card.highlight{
+    transform: scale(.96);
+    transition: all 0.3s ease;
 }
